@@ -16,11 +16,11 @@ class bet():
     error_path = '../dataconfig/error_bet.txt'
     username_path= '../dataconfig/username.txt'
     #彩种ID
-    lotterys=[1,3,4,5,6,7,8,9]
+    lotterys=[1,2,3,4,5,6,7,8,9]
     #lotterys = [6, 7]
     #下注金额
     num=10
-    times=10
+    times=20
     headers = {
         'Content-Type': "application/json",
         'cache-control': "no-cache",
@@ -45,6 +45,7 @@ class bet():
             return data
 
     def read_username(self):
+
 
         with open(self.username_path) as fp:
             data = fp.readlines()
