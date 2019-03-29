@@ -272,7 +272,8 @@ class create_user:
 
     # 修改一条线所有赚取赔率0.001
     def modify_odds(self):
-        usernames = {"TESTL2P12R0O1N1", "TESTL3P14R0O1N1", "TESTL4P16R0O1N1", "TESTL5P18R0O1N1"}
+
+        usernames = {self.tag+"L2P12R0O1N1", self.tag+"L3P14R0O1N1", self.tag+"L4P16R0O1N1", self.tag+"L5P18R0O1N1"}
         for username in usernames:
                 #各个彩种
             for lottery_id in range(1, 10):
